@@ -1,10 +1,13 @@
 package uz.mobiler.mylibrary
 
-import android.content.Context
-import android.widget.Toast
+import android.widget.EditText
+import com.google.android.material.resources.MaterialResources.getDrawable
 
 object ToastMassage {
-    fun show(context: Context,message:String){
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+    fun show(message:String,editText: EditText,count:Int){
+         if (message.length>=count){
+             editText.error = "Xato"
+         }
+        //Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
     }
 }
