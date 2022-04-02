@@ -19,7 +19,7 @@ implementation 'com.github.Fazliddin-141087:My-First-Repository:1.0.1'
 ```bash
  binding.edit.addTextChangedListener {
             ToastMassage.show(it.toString(),binding.edit,10)
-        }
+   }
 ```
 
 
